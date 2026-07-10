@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX CIRCUIT — Season 12 Race Calendar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-mark">Preparing Grid</div>
+  <div class="loader-bar-track"><div class="loader-bar-fill" id="loaderFill"></div></div>
+  <div class="loader-pct" id="loaderPct">0%</div>
+</div>
+
+<nav>
+  <div class="nav-mark">APEX<span>.</span>CIRCUIT</div>
+  <div class="nav-links">
+    <a href="#races">Races</a>
+    <a href="#stats">The Series</a>
+    <a href="#partners">Partners</a>
+    <a href="#races" class="btn btn-primary">Get Tickets</a>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-eyebrow eyebrow">Apex Circuit — Season 12</div>
+  <h1 class="headline">RACING<br><em>ENGINEERED.</em></h1>
+  <p class="hero-sub">We organize and operate 12 professional race weekends a year — from qualifying to podium — built on a standard of precision most fans never get to see. This season, get closer to it.</p>
+  <div class="hero-cta">
+    <a href="#races" class="btn btn-primary">View Race Calendar <span class="btn-arrow">→</span></a>
+    <a href="#partners" class="btn btn-outline">Become a Partner</a>
+  </div>
+  <div class="hero-foot">
+    <div class="scroll-cue"><div class="bar"></div>SCROLL</div>
+    <div class="hero-count">SEASON 12<br>4 ROUNDS REMAINING</div>
+  </div>
+</section>
+
+<div class="scrub-intro">
+  <h2>What it takes to line up on the grid.</h2>
+  <p>Every car that starts a race we run has passed through thousands of checks. This is what that precision actually looks like, piece by piece.</p>
+</div>
+
+<section class="scrub-wrap" id="engineering">
+  <div class="scrub-sticky">
+    <canvas id="scrub-canvas"></canvas>
+    <div class="scrub-hud">
+      <div class="hud-top">
+        <div class="hud-frame">FRAME <b id="frameNum">001</b> / 120</div>
+        <div class="hud-title">Grid-Ready — Inspection Sequence</div>
+      </div>
+    </div>
+    <div class="annotation" data-from="4" data-to="34" style="top:18%; left:10%;">
+      <div class="a-line"></div>
+      <div class="a-num">01</div>
+      <div class="a-name">Front Wing</div>
+      <div class="a-desc">Scrutineered before every session — the first thing checked, the first thing that fails a car.</div>
+    </div>
+    <div class="annotation" data-from="30" data-to="55" style="top:14%; right:8%; text-align:right;">
+      <div class="a-line" style="margin-left:auto;"></div>
+      <div class="a-num">02</div>
+      <div class="a-name">Halo & Cockpit</div>
+      <div class="a-desc">Rated to 12 tonnes of static load — non-negotiable on our safety sheet.</div>
+    </div>
+    <div class="annotation" data-from="45" data-to="72" style="top:44%; left:6%;">
+      <div class="a-line"></div>
+      <div class="a-num">03</div>
+      <div class="a-name">Power Unit</div>
+      <div class="a-desc">Sealed and logged by our technical stewards before every round.</div>
+    </div>
+    <div class="annotation" data-from="52" data-to="80" style="top:62%; right:10%; text-align:right;">
+      <div class="a-line" style="margin-left:auto;"></div>
+      <div class="a-num">04</div>
+      <div class="a-name">Suspension</div>
+      <div class="a-desc">Re-tuned per circuit — no two rounds on our calendar set up the same.</div>
+    </div>
+    <div class="annotation" data-from="60" data-to="88" style="bottom:16%; left:14%;">
+      <div class="a-line"></div>
+      <div class="a-num">05</div>
+      <div class="a-name">Diffuser</div>
+      <div class="a-desc">Floor-checked to the millimetre under our post-qualifying protocol.</div>
+    </div>
+    <div class="annotation" data-from="68" data-to="96" style="bottom:20%; right:8%; text-align:right;">
+      <div class="a-line" style="margin-left:auto;"></div>
+      <div class="a-num">06</div>
+      <div class="a-name">Rear Wing</div>
+      <div class="a-desc">Final piece re-fitted before a car is declared grid-ready.</div>
+    </div>
+    <div class="hud-progress-track"><div class="hud-progress-fill" id="progressFill"></div></div>
+  </div>
+</section>
+
+<section class="races" id="races">
+  <div class="section-head">
+    <h2>Season 12<br>Race Calendar</h2>
+    <div class="eyebrow">4 Rounds Remaining</div>
+  </div>
+  <div class="races-list">
+    <div class="race-row">
+      <div class="race-round">R09</div>
+      <div class="race-name">Grand Prix of Meridian Bay</div>
+      <div class="race-circuit">Meridian Bay Street Circuit</div>
+      <div class="race-date">AUG 08 — 10</div>
+      <a href="#" class="race-link">Get Tickets <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="race-row">
+      <div class="race-round">R10</div>
+      <div class="race-name">Sierra Circuit Cup</div>
+      <div class="race-circuit">Sierra Altiplano Raceway</div>
+      <div class="race-date">AUG 29 — 31</div>
+      <a href="#" class="race-link">Get Tickets <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="race-row">
+      <div class="race-round">R11</div>
+      <div class="race-name">Northline Street Race</div>
+      <div class="race-circuit">Northline Downtown Circuit</div>
+      <div class="race-date">SEP 19 — 21</div>
+      <a href="#" class="race-link">Get Tickets <span class="btn-arrow">→</span></a>
+    </div>
+    <div class="race-row">
+      <div class="race-round">R12</div>
+      <div class="race-name">Season Finale — Red Rock</div>
+      <div class="race-circuit">Red Rock International Circuit</div>
+      <div class="race-date">OCT 10 — 12</div>
+      <a href="#" class="race-link">Get Tickets <span class="btn-arrow">→</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="stats">
+  <div class="section-head">
+    <h2>Twelve Seasons,<br>One Standard.</h2>
+    <div class="eyebrow">The Series — By The Numbers</div>
+  </div>
+  <div class="stats-grid">
+    <div class="stat-cell">
+      <div class="s-label">Seasons Run</div>
+      <div class="s-value"><span>12</span></div>
+      <div class="s-note">Continuous operation since our founding round.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Circuits Hosted</div>
+      <div class="s-value">34<span>+</span></div>
+      <div class="s-note">Street circuits, permanent tracks, and purpose-built layouts.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Total Attendance</div>
+      <div class="s-value">2.4<span>M+</span></div>
+      <div class="s-note">Trackside fans across twelve seasons of racing.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Teams On The Grid</div>
+      <div class="s-value"><span>20</span></div>
+      <div class="s-note">Ten constructors, full grid, every round.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Avg. Qualifying Gap</div>
+      <div class="s-value">0.11<span>s</span></div>
+      <div class="s-note">The margin our races are decided by, on average.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Broadcast Reach</div>
+      <div class="s-value">140<span>+</span></div>
+      <div class="s-note">Countries carrying our race weekends live.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Safety Record</div>
+      <div class="s-value">ZERO</div>
+      <div class="s-note">Fatal incidents across twelve seasons of racing.</div>
+    </div>
+    <div class="stat-cell">
+      <div class="s-label">Partner Brands</div>
+      <div class="s-value">60<span>+</span></div>
+      <div class="s-note">Global and regional partners on the grid this season.</div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-split" id="partners">
+  <div class="cta-panel">
+    <div>
+      <div class="eyebrow" style="margin-bottom:20px;">For Fans</div>
+      <h3>Get closer<br>to the grid.</h3>
+      <p>Tickets for all four remaining rounds are live, with paddock and pit-lane packages available for the season finale.</p>
+    </div>
+    <a href="#races" class="btn btn-primary" style="align-self:flex-start;">View Tickets <span class="btn-arrow">→</span></a>
+  </div>
+  <div class="cta-panel">
+    <div>
+      <div class="eyebrow" style="margin-bottom:20px;">For Teams & Brands</div>
+      <h3>Race with us<br>next season.</h3>
+      <p>We work with constructors, sponsors, and host circuits to build every round of the calendar. Season 13 planning is open now.</p>
+    </div>
+    <a href="mailto:partnerships@apexcircuit.com" class="btn btn-outline" style="align-self:flex-start;">Contact Partnerships <span class="btn-arrow">→</span></a>
+  </div>
+</section>
+
+<footer>
+  <div class="f-mark"><b>APEX CIRCUIT</b> — Season 12</div>
+  <div class="f-links">
+    <a href="#races">Races</a>
+    <a href="#stats">The Series</a>
+    <a href="#partners">Partners</a>
+    <a href="mailto:info@apexcircuit.com">Contact</a>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+
+</body>
+</html>
