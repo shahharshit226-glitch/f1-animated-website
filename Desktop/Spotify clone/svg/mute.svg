@@ -1,8 +1,0 @@
-<svg width="48" height="48" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
-  <title>Muted</title>
-  <!-- Speaker -->
-  <polygon points="22,36 40,36 58,24 58,76 40,64 22,64" fill="black"/>
-  <!-- X -->
-  <line x1="70" y1="34" x2="90" y2="56" stroke="black" stroke-width="6" stroke-linecap="round"/>
-  <line x1="90" y1="34" x2="70" y2="56" stroke="black" stroke-width="6" stroke-linecap="round"/>
-</svg>
